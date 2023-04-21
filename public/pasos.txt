@@ -1,0 +1,31 @@
+IVA,1,ordenador,220
+SINIVA,2,tablet,300
+IVA,3,televisor,220
+
+2º Split por Empresa:
+ArrayList<String> facturasEmpresas {
+IVA,1,ordenador,220
+SINIVA,2,tablet,300
+IVA,3,televisor,220
+,
+SINIVA,4,mesa,400
+IVA 5,silla,350
+SINIVA,6,silla,300
+IVA,7,alargadera,100
+SINIVA,7,auricular,300
+,
+IVA,1,ordenador,220
+SINIVA,2,tablet,300
+IVA,3,televisor,220
+}
+
+2º Split por factura
+
+ArrayList<String> facturas {
+IVA,1,ordenador,220,
+SINIVA,2,tablet,300,
+IVA,3,televisor,220
+}
+
+3º Split por campos:
+Arr
