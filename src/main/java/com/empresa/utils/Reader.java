@@ -1,14 +1,11 @@
-package com.empresa.reader;
+package com.empresa.utils;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Reader {
-    private String rutaFactura;
-    private String fileName;
-    private ArrayList<String> lines = new ArrayList<String>();
+    private final String fileName;
 
     public Reader(String fileName) {
         this.fileName = fileName;

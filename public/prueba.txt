@@ -1,10 +1,19 @@
-IVA ,1,ordenador,220
+IVA,1,ordenador,220
 SINIVA,2,tablet,300
-IVA ,3,televisor,220
-*******************************
+IVA,3,televisor,220
+*
 SINIVA,4,mesa,400
-IVA ,5,silla,350
+IVA,5,silla,350
 SINIVA,6,silla,200
-IVA ,7,alargadera,100
+IVA,7,alargadera,100
 SINIVA,8,auricular,300
-*********************************
+*
+SINIVA,9,ordenador,220
+IVA,10,tablet,300
+SINIVA,11,televisor,220
+*
+SINIVA,12,mesa,400
+IVA,13,silla,350
+SINIVA,14,silla,200
+IVA,15,alargadera,100
+SINIVA,16,auricular,300

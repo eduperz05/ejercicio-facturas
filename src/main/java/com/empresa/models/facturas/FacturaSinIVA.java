@@ -1,4 +1,4 @@
-package com.empresa.facturas;
+package com.empresa.models.facturas;
 
 public class FacturaSinIVA extends Factura {
     public FacturaSinIVA(int numero, String concepto, double importe) {

@@ -1,4 +1,4 @@
-package com.empresa.facturas;
+package com.empresa.models.facturas;
 
 public abstract class Factura {
     private int numero;

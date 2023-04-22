@@ -1,16 +1,22 @@
-package com.empresa;
+package com.empresa.models.empresa;
 
-import com.empresa.facturas.Factura;
+import com.empresa.models.facturas.Factura;
 
 import java.util.ArrayList;
 
 public class Empresa {
 
     private final String nombre;
-    private final int CIF;
+    private final String CIF;
     private ArrayList<Factura> facturas;
 
-    public Empresa(String nombre, int CIF) {
+    public Empresa(String nombre, String CIF, ArrayList<Factura> facturas) {
+        this.nombre = nombre;
+        this.CIF = CIF;
+        this.facturas = facturas;
+    }
+
+    public Empresa(String nombre, String CIF) {
         this.nombre = nombre;
         this.CIF = CIF;
     }
@@ -27,7 +33,7 @@ public class Empresa {
         return nombre;
     }
 
-    public int getCIF() {
+    public String getCIF() {
         return CIF;
     }
 
@@ -37,11 +43,7 @@ public class Empresa {
 
     public void deleteFacturas( int ... iFacturas) {
         for (int iFact: iFacturas) {
-            for ( Factura fact: facturas ) {
-                if (fact.getNumero() == iFact) {
-                    facturas.remove(fact);
-                }
-            }
+            facturas.removeIf(fact -> fact.getNumero() == iFact);
         }
     }
 
